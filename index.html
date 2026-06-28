@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <div class="netflix-logo">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <text x="50" y="70" font-size="60" font-weight="bold" fill="#E50914" text-anchor="middle">N</text>
+                    </svg>
+                </div>
+                <nav class="nav-menu">
+                    <a href="#" class="nav-link active">Home</a>
+                    <a href="#" class="nav-link">TV Shows</a>
+                    <a href="#" class="nav-link">Movies</a>
+                    <a href="#" class="nav-link">New & Popular</a>
+                </nav>
+            </div>
+            <div class="navbar-right">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search shows and movies..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <div class="user-profile">👤</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="images/the_crown.jpg" alt="Featured content">
+            </div>
+            <div class="hero-info">
+                <h1 class="hero-title">The Crown</h1>
+                <p class="hero-description">
+                    Experience the drama, passion, and intrigue of the British royal family as they navigate decades of change and challenge. A masterpiece of television storytelling.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <span>▶</span> Play
+                    </button>
+                    <button class="btn btn-secondary">
+                        <span>ℹ</span> More Info
+                    </button>
+                </div>
+                <div class="hero-rating">
+                    <span class="rating-badge">16+</span>
+                    <span class="rating-text">Drama • Historical • UK</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Featured Content Rows -->
+    <div class="content-container">
+        <!-- Trending Now -->
+        <section class="content-row">
+            <h2 class="row-title">Trending Now</h2>
+            <div class="carousel" id="trendingCarousel">
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/stranger_things.jpg" alt="Stranger Things">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>Stranger Things</h3>
+                                <p class="match-rating">98% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/the_witcher.jpg" alt="The Witcher">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>The Witcher</h3>
+                                <p class="match-rating">95% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/Bridgerton.jpg" alt="Bridgerton">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>Bridgerton</h3>
+                                <p class="match-rating">92% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/The_Mandalorian.jpg" alt="The Mandalorian">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>The Mandalorian</h3>
+                                <p class="match-rating">94% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/Wednesday.jpg" alt="Wednesday">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>Wednesday</h3>
+                                <p class="match-rating">89% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/Squid_Game.jpg" alt="Squid Game">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>Squid Game</h3>
+                                <p class="match-rating">97% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Movies -->
+        <section class="content-row">
+            <h2 class="row-title">Popular on Netflix</h2>
+            <div class="carousel" id="popularCarousel">
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/The_Adam_Project.jpg" alt="The Adam Project">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>The Adam Project</h3>
+                                <p class="match-rating">85% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/Red_Notice.jpg" alt="Red Notice">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>Red Notice</h3>
+                                <p class="match-rating">88% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/Glass_Onion.jpg" alt="Glass Onion">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>Glass Onion</h3>
+                                <p class="match-rating">93% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/Extraction.jpg" alt="Extraction">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>Extraction</h3>
+                                <p class="match-rating">90% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/Don't_Look_Up.jpg" alt="Don't Look Up">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>Don't Look Up</h3>
+                                <p class="match-rating">86% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/Uncut_Gems.jpg" alt="Uncut Gems">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>Uncut Gems</h3>
+                                <p class="match-rating">84% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Rated -->
+        <section class="content-row">
+            <h2 class="row-title">Top Rated</h2>
+            <div class="carousel" id="topRatedCarousel">
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/Breaking_Bad.jpg" alt="Breaking Bad">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>Breaking Bad</h3>
+                                <p class="match-rating">99% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/Thrones.jpg" alt="Game of Thrones">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>Game of Thrones</h3>
+                                <p class="match-rating">96% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/The_Office.jpg" alt="The Office">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>The Office</h3>
+                                <p class="match-rating">94% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/Friends.jpg" alt="Friends">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>Friends</h3>
+                                <p class="match-rating">91% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/Chernobyl.jpg" alt="Chernobyl">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>Chernobyl</h3>
+                                <p class="match-rating">98% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="movie-card">
+                        <img src="images/the_crown.jpg" alt="The Crown">
+                        <div class="card-overlay">
+                            <button class="play-button">▶</button>
+                            <div class="card-info">
+                                <h3>The Crown</h3>
+                                <p class="match-rating">95% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2024 Netflix Clone. This is a UI clone for educational purposes.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Help</a>
+                    <a href="#">Account</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
